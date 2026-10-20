@@ -1,0 +1,589 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Bayana · The WhatsApp CRM for real-estate brokerages</title>
+<meta name="description" content="Bayana replies to every portal lead on WhatsApp in seconds, shows you every agent's day on your phone, and keeps every client with your firm, even when agents leave. Free setup in your office.">
+<meta name="theme-color" content="#141B34">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Bayana">
+<meta property="og:title" content="Bayana · From first WhatsApp to bayana">
+<meta property="og:description" content="The WhatsApp CRM for real-estate brokerages. Every lead answered in seconds, every agent visible, every client stays with your firm.">
+<meta property="og:image" content="{{site}}og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="en_IN">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+{{fontPreloads}}
+<script>
+  // Decide once, before paint: lighter visuals on touch and low-power devices, nothing animated for reduced motion.
+  (function () {
+    var d = document.documentElement, n = navigator
+    var coarse = matchMedia('(pointer: coarse)').matches
+    var weak = (n.hardwareConcurrency || 8) <= 4 || (n.deviceMemory || 8) <= 4
+    d.classList.add('js')
+    if (coarse || weak) d.classList.add('lite')
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) d.classList.add('still')
+  })()
+</script>
+<style>{{css}}</style>
+<script type="application/ld+json">{{jsonld}}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" data-nav>
+  <div class="wrap nav-inner">
+    <a class="logo" href="#top" aria-label="Bayana home">
+      <svg class="logo-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#i-logo"/></svg>
+      <span class="logo-word">bayana</span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#how">How it works</a>
+      <a href="#features">Features</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a class="btn btn-sm btn-primary" href="{{wa|Hi! I'd like to see Bayana for my brokerage.}}" target="_blank" rel="noopener" data-cta="nav">
+      <svg class="i" aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp us</span>
+    </a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <svg class="hero-skyline" viewBox="0 0 1440 260" preserveAspectRatio="xMidYMax slice" aria-hidden="true"><use href="#skyline"/></svg>
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="pill" data-reveal><span class="live-dot" aria-hidden="true"></span>Founding pilot now open in Gurugram</p>
+      <h1 class="display hero-title" data-reveal>
+        <span class="line">From first WhatsApp</span>
+        <span class="line">to <span class="mark">bayana<svg class="scribble" viewBox="0 0 300 24" preserveAspectRatio="none" aria-hidden="true"><path d="M4 16 C 60 6, 120 4, 170 9 S 260 18, 296 8" pathLength="1"/></svg></span>.</span>
+      </h1>
+      <p class="hero-sub" data-reveal>Bayana is the WhatsApp CRM for real-estate brokerages. Every portal lead gets a reply in seconds, you see every agent’s day on your phone, and every client stays with your firm, even when an agent leaves.</p>
+      <p class="hero-hinglish" data-reveal>Lead aapki. Data aapka. <em>Bayana</em> bhi aapka.</p>
+      <div class="cta-row" data-reveal>
+        <a class="btn btn-primary btn-lg" href="{{wa|Hi! I'd like a free demo of Bayana for my brokerage.}}" target="_blank" rel="noopener" data-cta="hero">
+          <svg class="i" aria-hidden="true"><use href="#i-wa"/></svg><span>Get a free demo on WhatsApp</span>
+        </a>
+        <!--demo--><a class="btn btn-ghost btn-lg" href="{{demo}}" target="_blank" rel="noopener" data-cta="hero-demo"><span>Try the live demo</span><svg class="i" aria-hidden="true"><use href="#i-arrow"/></svg></a><!--/demo-->
+        <!--nodemo--><a class="btn btn-ghost btn-lg" href="#how"><span>See how it works</span><svg class="i" aria-hidden="true"><use href="#i-down"/></svg></a><!--/nodemo-->
+      </div>
+      <ul class="trust-row" data-reveal>
+        <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Free setup in your office</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>Hindi &amp; English</li>
+        <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg>No contract</li>
+      </ul>
+    </div>
+
+    <div class="hero-stage" data-hero>
+      <p class="sr-only">Animation: a 99acres enquiry arrives on WhatsApp, Bayana replies automatically within seconds, asks for budget and move-in, fills in the buyer’s brief, assigns the lead to an agent who shares matching homes and books a site visit.</p>
+      <div class="float-card fc-1" aria-hidden="true"><span class="fc-icon bolt"><svg class="i"><use href="#i-bolt"/></svg></span><div><strong>Replied in 4 sec</strong><small>New 99acres lead</small></div></div>
+      <div class="float-card fc-2" aria-hidden="true"><span class="fc-icon ok"><svg class="i"><use href="#i-pin"/></svg></span><div><strong>Visit verified</strong><small>42 m from the site</small></div></div>
+      <div class="float-card fc-3" aria-hidden="true"><span class="fc-icon swap"><svg class="i"><use href="#i-users"/></svg></span><div><strong>Rahul on leave</strong><small>6 leads moved to Priya</small></div></div>
+
+      <div class="phone hero-phone" aria-hidden="true">
+        <div class="phone-screen">
+          <div class="app-top">
+            <svg class="app-logo" viewBox="0 0 64 64"><use href="#i-logo"/></svg>
+            <span class="app-name">Bayana</span>
+            <span class="app-status"><i></i>WhatsApp connected</span>
+          </div>
+          <div class="chat-head">
+            <span class="avatar">MI</span>
+            <div><strong>Meera Iyer</strong><small><span class="src-tag">99acres</span> also sent to ~6 brokers</small></div>
+          </div>
+          <div class="brief" data-brief>
+            <svg class="i"><use href="#i-spark"/></svg>
+            <span class="brief-old">3 BHK · Budget to qualify</span>
+            <span class="brief-new">3 BHK · ₹2.5–2.8 Cr · by March</span>
+          </div>
+          <div class="chat-body">
+            <div class="chat-track" data-track>
+              <p class="day">Today</p>
+              <div class="bubble in" data-step>Hi, is the 3 BHK on Golf Course Extension still available?<time>10:02</time></div>
+              <div class="typing" data-step><i></i><i></i><i></i></div>
+              <div class="bubble out auto" data-step><b>Automatic</b>Hi Meera! Yes, it is. Two quick questions so we send the right homes: what’s your budget?<time>10:02 ✓✓</time></div>
+              <div class="bubble in" data-step>2.5 to 2.8 Cr<time>10:03</time></div>
+              <div class="bubble out auto" data-step><b>Automatic</b>And when do you want to move in?<time>10:03 ✓✓</time></div>
+              <div class="bubble in" data-step>By March<time>10:03</time></div>
+              <p class="sys" data-step><svg class="i"><use href="#i-spark"/></svg><span>Brief filled · assigned to <b>Priya</b>, Golf Course Ext. team</span></p>
+              <div class="bubble out" data-step><b class="agent">Priya · Sales</b>Hi Meera, I’m Priya. 3 homes that fit your brief:
+                <span class="mini-listing"><svg viewBox="0 0 48 48"><use href="#i-tower"/></svg><span><strong>Skyline Residences</strong><small>3 BHK · 1,950 sq ft</small><b>₹2.65 Cr</b></span></span>
+                Saturday 11 am for a visit?<time>10:05 ✓✓</time></div>
+              <div class="bubble in" data-step>Saturday works 👍<time>10:06</time></div>
+              <p class="sys ok" data-step><svg class="i"><use href="#i-check"/></svg><span>Visit booked · Sat 11:00 AM</span></p>
+            </div>
+          </div>
+          <div class="composer"><span>Write a WhatsApp message</span><i></i></div>
+          <div class="deal-sheet" data-step-deal>
+            <p class="later">2 weeks later</p>
+            <div class="deal-card">
+              <div class="deal-row"><span class="avatar sm">MI</span><div><strong>Meera Iyer</strong><small>Skyline Residences · 3 BHK</small></div></div>
+              <ol class="deal-track"><li>Lead</li><li>Visit</li><li>Offer</li><li class="now">Bayana</li></ol>
+              <div class="deal-amt"><small>Token received</small><strong>₹5,00,000</strong></div>
+            </div>
+            <div class="stamp"><span>Bayana</span><small>received ✓</small></div>
+          </div>
+        </div>
+      </div>
+      <p class="reply-clock" aria-hidden="true"><svg class="i"><use href="#i-clock"/></svg>First reply <b data-clock>0:00</b></p>
+    </div>
+  </div>
+</section>
+
+<!-- TICKER -->
+<div class="ticker-wrap" aria-hidden="true"><div class="ticker" data-ticker>
+  <div class="ticker-track">
+    <span>Same lead, 12 brokers</span><svg class="tk"><use href="#i-key"/></svg>
+    <span>Reply aaya 3 ghante baad</span><svg class="tk"><use href="#i-key"/></svg>
+    <span>Agent gaya, clients bhi gaye</span><svg class="tk"><use href="#i-key"/></svg>
+    <span>Site visit? Pata nahi</span><svg class="tk"><use href="#i-key"/></svg>
+    <span>Follow-up bhool gaye</span><svg class="tk"><use href="#i-key"/></svg>
+    <span>Excel last updated: March</span><svg class="tk"><use href="#i-key"/></svg>
+    <span>Same lead, 12 brokers</span><svg class="tk"><use href="#i-key"/></svg>
+    <span>Reply aaya 3 ghante baad</span><svg class="tk"><use href="#i-key"/></svg>
+    <span>Agent gaya, clients bhi gaye</span><svg class="tk"><use href="#i-key"/></svg>
+    <span>Site visit? Pata nahi</span><svg class="tk"><use href="#i-key"/></svg>
+    <span>Follow-up bhool gaye</span><svg class="tk"><use href="#i-key"/></svg>
+    <span>Excel last updated: March</span><svg class="tk"><use href="#i-key"/></svg>
+  </div>
+</div></div>
+
+<!-- PROBLEM -->
+<section class="section problem" aria-labelledby="problem-title">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>The problem</p>
+    <h2 class="display h2" id="problem-title" data-reveal>Your business runs on WhatsApp.<br>So do the leaks.</h2>
+    <div class="cards-3">
+      <article class="pcard" data-reveal>
+        <svg class="pcard-art" viewBox="0 0 240 150" aria-hidden="true"><use href="#art-shared"/></svg>
+        <h3>Paid leads, slow replies</h3>
+        <p>A 99acres or MagicBricks lead reaches 12–15 brokers at the same moment. The first to reply usually gets the client. Yours replied after lunch.</p>
+        <p class="pcard-stat"><strong>₹400–900</strong> paid for each shared lead</p>
+      </article>
+      <article class="pcard" data-reveal>
+        <svg class="pcard-art" viewBox="0 0 240 150" aria-hidden="true"><use href="#art-leaving"/></svg>
+        <h3>Clients live on personal phones</h3>
+        <p>Every chat sits in an agent’s own WhatsApp. When they leave, the buyers leave with them, and you start again from zero.</p>
+        <p class="pcard-stat"><strong>Years</strong> of relationships, one resignation away</p>
+      </article>
+      <article class="pcard" data-reveal>
+        <svg class="pcard-art" viewBox="0 0 240 150" aria-hidden="true"><use href="#art-evening"/></svg>
+        <h3>You hear about the day at 7 pm</h3>
+        <p>Who called whom, who really went to the site, which follow-up was missed: you find out in the evening meeting, if at all.</p>
+        <p class="pcard-stat"><strong>Zero</strong> visibility while it still matters</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- LEAK CALCULATOR -->
+<section class="section leak" aria-labelledby="leak-title">
+  <div class="wrap leak-grid">
+    <div class="leak-copy">
+      <p class="eyebrow on-dark" data-reveal>Quick maths</p>
+      <h2 class="display h2" id="leak-title" data-reveal>How much is a slow reply costing you?</h2>
+      <p class="lead-text" data-reveal>Move the sliders to match your brokerage. Leads that wait more than an hour for a reply rarely turn into site visits.</p>
+      <p class="fine" data-reveal>Firms that reply within an hour are about 7× more likely to qualify a lead than those that wait longer (Harvard Business Review, “The Short Life of Online Sales Leads”).</p>
+    </div>
+    <form class="calc" data-calc data-reveal onsubmit="return false">
+      <label class="calc-row">
+        <span class="calc-label">Leads you pay for each month <output data-out="leads">300</output></span>
+        <input type="range" min="20" max="1000" step="10" value="300" name="leads" aria-describedby="leak-title">
+      </label>
+      <label class="calc-row">
+        <span class="calc-label">Average cost per lead <output data-out="cpl">₹600</output></span>
+        <input type="range" min="100" max="2000" step="50" value="600" name="cpl">
+      </label>
+      <label class="calc-row">
+        <span class="calc-label">Leads that wait over an hour <output data-out="slow">30%</output></span>
+        <input type="range" min="0" max="80" step="5" value="30" name="slow">
+      </label>
+      <div class="calc-result" aria-live="polite">
+        <p class="calc-k">Spent every month on leads that went cold</p>
+        <p class="calc-big" data-out="lost">₹54,000</p>
+        <p class="calc-year">That’s <b data-out="year">₹6.5 lakh</b> a year. Bayana Team costs ₹11,999 a month.</p>
+        <a class="btn btn-dark" href="{{wa|Hi! I'd like to stop losing leads to slow replies. Can you show me Bayana?}}" target="_blank" rel="noopener" data-calc-cta data-cta="calculator"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg><span>Stop the leak: talk to us</span></a>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section how" id="how" aria-labelledby="how-title">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>How it works</p>
+    <h2 class="display h2" id="how-title" data-reveal>From enquiry to bayana, in four steps.</h2>
+    <div class="how-grid">
+      <div class="how-phone-wrap" aria-hidden="true">
+        <div class="phone how-phone">
+          <div class="phone-screen">
+            <picture class="how-shot is-on" data-how-shot="1"><source type="image/avif" srcset="media/how-1.avif"><img src="media/how-1.webp" alt="" width="390" height="844" loading="lazy" decoding="async"></picture>
+            <picture class="how-shot" data-how-shot="2"><source type="image/avif" srcset="media/how-2.avif"><img src="media/how-2.webp" alt="" width="390" height="844" loading="lazy" decoding="async"></picture>
+            <picture class="how-shot" data-how-shot="3"><source type="image/avif" srcset="media/how-3.avif"><img src="media/how-3.webp" alt="" width="390" height="844" loading="lazy" decoding="async"></picture>
+            <picture class="how-shot" data-how-shot="4"><source type="image/avif" srcset="media/how-4.avif"><img src="media/how-4.webp" alt="" width="390" height="844" loading="lazy" decoding="async"></picture>
+          </div>
+        </div>
+      </div>
+      <ol class="steps" data-steps>
+        <li class="step" data-step-n="1">
+          <span class="step-num">1</span>
+          <div>
+            <h3>A lead comes in</h3>
+            <p>From 99acres, MagicBricks, Housing.com, Facebook and Instagram ads, your website or a walk-in. Every enquiry lands in one inbox, with its source.</p>
+          </div>
+        </li>
+        <li class="step" data-step-n="2">
+          <span class="step-num">2</span>
+          <div>
+            <h3>Bayana replies in seconds</h3>
+            <p>An automatic WhatsApp reply goes out straight away, then three quick questions: budget, area, move-in. The answers fill in the buyer’s brief for your agent.</p>
+          </div>
+        </li>
+        <li class="step" data-step-n="3">
+          <span class="step-num">3</span>
+          <div>
+            <h3>The right agent takes over</h3>
+            <p>By area, by source or turn by turn. Matching homes go out in one tap. If nobody replies in 15 minutes, the lead is flagged to the manager and to you.</p>
+          </div>
+        </li>
+        <li class="step" data-step-n="4">
+          <span class="step-num">4</span>
+          <div>
+            <h3>Visit, offer, bayana</h3>
+            <p>Site visits are checked in by location. Offers, token and agreement dates are tracked, and the commission split is clear before the deal closes.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+    <div class="how-strip" aria-label="Screens from each step">
+      <figure><picture><source type="image/avif" srcset="media/how-1.avif"><img src="media/how-1.webp" alt="A new 99acres lead arriving in the Bayana inbox" width="390" height="844" loading="lazy" decoding="async"></picture><figcaption><b>1</b> Lead arrives</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="media/how-2.avif"><img src="media/how-2.webp" alt="Automatic reply and qualifying questions answered on WhatsApp" width="390" height="844" loading="lazy" decoding="async"></picture><figcaption><b>2</b> Auto-reply and brief</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="media/how-3.avif"><img src="media/how-3.webp" alt="Matching homes picked and previewed before sending on WhatsApp" width="390" height="844" loading="lazy" decoding="async"></picture><figcaption><b>3</b> Homes shared</figcaption></figure>
+      <figure><picture><source type="image/avif" srcset="media/how-4.avif"><img src="media/how-4.webp" alt="A site visit check-in verified at the property" width="390" height="844" loading="lazy" decoding="async"></picture><figcaption><b>4</b> Visit verified</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section features" id="features" aria-labelledby="features-title">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>What you get</p>
+    <h2 class="display h2" id="features-title" data-reveal>Everything a brokerage runs on.<br>Nothing it doesn’t.</h2>
+
+    <article class="feature" data-reveal>
+      <div class="feature-media">
+        <div class="phone">
+          <div class="phone-screen"><video class="clip" muted playsinline loop preload="none" poster="media/reply-poster.webp" aria-label="Screen recording: a new 99acres lead gets an automatic WhatsApp reply and qualifying questions, then the AI-filled brief is accepted" data-src="media/reply"></video></div>
+        </div>
+        <div class="chip-float cf-a" aria-hidden="true"><svg class="i"><use href="#i-alert"/></svg>Also sent to ~6 brokers. Call now.</div>
+      </div>
+      <div class="feature-copy">
+        <p class="eyebrow">Speed to lead</p>
+        <h3 class="display h3">Answer first. Every single time.</h3>
+        <p>The same lead is sitting in a dozen other brokers’ phones. Bayana replies the moment it lands, day or night, and asks the questions your best agent would ask.</p>
+        <ul class="ticks">
+          <li>Automatic WhatsApp reply in seconds</li>
+          <li>Qualifying questions fill in the buyer’s brief</li>
+          <li>“Also sent to ~6 brokers” warning, so agents call first</li>
+          <li>AI reply drafts in Hindi or English. Your agent checks them before anything is sent.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="feature flip" data-reveal>
+      <div class="feature-media">
+        <div class="phone">
+          <div class="phone-screen"><video class="clip" muted playsinline loop preload="none" poster="media/handover-poster.webp" aria-label="Screen recording: the owner deactivates an agent who is leaving and moves all of their leads to a teammate" data-src="media/handover"></video></div>
+        </div>
+        <div class="chip-float cf-b" aria-hidden="true"><svg class="i"><use href="#i-lock"/></svg>Agents see <b>+91 98XXX XX018</b></div>
+      </div>
+      <div class="feature-copy">
+        <p class="eyebrow">Your data</p>
+        <h3 class="display h3">Clients stay with your firm. Even when agents don’t.</h3>
+        <p>Chats live on your company’s WhatsApp number inside Bayana, not on personal phones. When someone leaves, their leads move to a teammate in one tap, with the full history.</p>
+        <ul class="ticks">
+          <li>Agents see masked phone numbers</li>
+          <li>Each agent sees only their own leads</li>
+          <li>Exports are owner-only, and every export is logged</li>
+          <li>Audit log of every reassignment and setting change</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="feature" data-reveal>
+      <div class="feature-media">
+        <div class="phone">
+          <div class="phone-screen"><video class="clip" muted playsinline loop preload="none" poster="media/visit-poster.webp" aria-label="Screen recording: an agent's check-in is refused 1.4 km from the property, then verified at the property" data-src="media/visit"></video></div>
+        </div>
+        <div class="chip-float cf-c" aria-hidden="true"><svg class="i"><use href="#i-pin"/></svg>Refused: 1.4 km from the site</div>
+      </div>
+      <div class="feature-copy">
+        <p class="eyebrow">Field visits</p>
+        <h3 class="display h3">Site visits you can actually trust.</h3>
+        <p>Agents check in from the property. If they aren’t within 200 m, the check-in is refused and you’re told. After every visit, the outcome is recorded before they move on.</p>
+        <ul class="ticks">
+          <li>Location is read only when they tap. No live tracking.</li>
+          <li>Refused check-ins show up on your phone</li>
+          <li>Visit outcome required: liked it, wants another, not interested</li>
+          <li>Office attendance and leave, with leads covered while someone’s away</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="feature flip" data-reveal>
+      <div class="feature-media">
+        <div class="phone">
+          <div class="phone-screen"><video class="clip" muted playsinline loop preload="none" poster="media/share-poster.webp" aria-label="Screen recording: matching homes are picked with reasons, previewed and shared on WhatsApp, then marked seen" data-src="media/share"></video></div>
+        </div>
+        <div class="chip-float cf-d" aria-hidden="true"><svg class="i"><use href="#i-eye"/></svg>Seen by Ananya</div>
+      </div>
+      <div class="feature-copy">
+        <p class="eyebrow">Inventory</p>
+        <h3 class="display h3">The right home, shared in one tap.</h3>
+        <p>Bayana matches every buyer to your listings by area, size and budget, and spells out why. Pick the homes, check the WhatsApp preview, send.</p>
+        <ul class="ticks">
+          <li>Matches with reasons: area, BHK, in budget</li>
+          <li>WhatsApp preview before anything is sent</li>
+          <li>See when the buyer has seen it</li>
+          <li>Property owners’ numbers hidden from agents who don’t need them</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="feature owner" data-reveal>
+      <div class="feature-media">
+        <div class="browser">
+          <div class="browser-bar" aria-hidden="true"><i></i><i></i><i></i><span>bayana · your team today</span></div>
+          <picture><source type="image/avif" srcset="media/d-today-1000.avif 1000w, media/d-today-1600.avif 1600w" sizes="(min-width: 1100px) 640px, 92vw"><img src="media/d-today-1000.webp" srcset="media/d-today-1000.webp 1000w, media/d-today-1600.webp 1600w" sizes="(min-width: 1100px) 640px, 92vw" alt="Bayana on a laptop: the owner's view of today with visits, replies waiting, active value and the lead inbox" width="1440" height="900" loading="lazy" decoding="async"></picture>
+        </div>
+        <div class="phone phone-sm">
+          <div class="phone-screen"><video class="clip" muted playsinline loop preload="none" poster="media/escalate-poster.webp" aria-label="Screen recording: leads waiting more than 15 minutes for a reply, one is reassigned in two taps" data-src="media/escalate"></video></div>
+        </div>
+      </div>
+      <div class="feature-copy">
+        <p class="eyebrow">Owner view</p>
+        <h3 class="display h3">Your whole team on one screen.</h3>
+        <p>Open Bayana at 11 am and know exactly what’s happening: who’s waiting for a reply, who’s at a site, which deal is stuck, who’s on leave.</p>
+        <ul class="ticks">
+          <li>Leads waiting over 15 minutes, with one-tap reassign</li>
+          <li>Leaderboard by commission, visits and reply time</li>
+          <li>Offers, token, agreement dates and commission split</li>
+          <li>A plain-language weekly summary of the whole team</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- BUILT FOR BROKERS -->
+<section class="section easy" aria-labelledby="easy-title">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>Built for brokers, not techies</p>
+    <h2 class="display h2" id="easy-title" data-reveal>If your team can use WhatsApp,<br>they can use Bayana.</h2>
+    <ul class="tiles">
+      <li class="tile" data-reveal><span class="tile-icon"><svg class="i"><use href="#i-chat"/></svg></span><h3>Feels like WhatsApp</h3><p>Chats, templates and quick replies in the layout agents already know. Most are comfortable on day one.</p></li>
+      <li class="tile" data-reveal><span class="tile-icon"><svg class="i"><use href="#i-home"/></svg></span><h3>Free setup in your office</h3><p>We come to you, import your Excel sheets and train the whole team in one sitting.</p></li>
+      <li class="tile" data-reveal><span class="tile-icon"><svg class="i"><use href="#i-lang"/></svg></span><h3>Hindi and English</h3><p>Reply drafts, templates and support in the language your team and your buyers speak.</p></li>
+      <li class="tile" data-reveal><span class="tile-icon"><svg class="i"><use href="#i-phone"/></svg></span><h3>Any phone, any laptop</h3><p>Runs on the Android phones your agents already carry, and on the office computer.</p></li>
+      <li class="tile" data-reveal><span class="tile-icon"><svg class="i"><use href="#i-pin-off"/></svg></span><h3>No live tracking</h3><p>Location is read only at check-in. Agents don’t feel watched, and you still know the visit happened.</p></li>
+      <li class="tile" data-reveal><span class="tile-icon"><svg class="i"><use href="#i-door"/></svg></span><h3>No contract</h3><p>Pay monthly. Leave whenever you like and take every lead with you in Excel.</p></li>
+    </ul>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<!-- Draft written with Better Days Realty as pilot partner; get Bipin's sign-off on the final wording before publishing. -->
+<section class="section proof" aria-labelledby="proof-title">
+  <div class="wrap">
+    <h2 class="sr-only" id="proof-title">What our pilot partner says</h2>
+    <figure class="quote-card" data-reveal>
+      <div class="quote-top">
+        <span class="partner-badge"><svg class="i" aria-hidden="true"><use href="#i-key"/></svg>Pilot partner</span>
+        <picture class="bdr-logo"><source type="image/avif" srcset="media/bdr-logo.avif"><img src="media/bdr-logo.webp" alt="Better Days Realty logo" width="88" height="88" loading="lazy" decoding="async"></picture>
+      </div>
+      <blockquote class="display">
+        <p>“In Gurgaon the same lead reaches ten brokers in the same minute, and <em>whoever replies first wins</em>. My team lives on WhatsApp, but I couldn’t see any of it. Bayana answers every enquiry in seconds and keeps every client with the firm. That’s why we’re helping build it.”</p>
+      </blockquote>
+      <figcaption>
+        <picture class="person"><source type="image/avif" srcset="media/bipin.avif"><img src="media/bipin.webp" alt="Bipin Bhagvan Das" width="96" height="96" loading="lazy" decoding="async"></picture>
+        <span><strong>Bipin Bhagvan Das</strong><small>Founder &amp; Managing Director, Better Days Realty · Gurugram</small></span>
+      </figcaption>
+    </figure>
+    <div class="mini-quotes">
+      <figure class="mini-quote" data-reveal>
+        <blockquote><p>“Abhi har lead ka hisaab Excel aur WhatsApp mein milana padta hai. Bayana mein sab ek jagah dikhta hai: kisne reply kiya, kaun site pe gaya.”</p></blockquote>
+        <p class="translation">“Right now I match every lead across Excel and WhatsApp. In Bayana it’s all in one place: who replied, who went to the site.”</p>
+        <figcaption>Sales manager, Better Days Realty</figcaption>
+      </figure>
+      <figure class="mini-quote" data-reveal>
+        <blockquote><p>“Mere liye toh yeh WhatsApp hi hai. Bas follow-up yaad nahi rakhna padta.”</p></blockquote>
+        <p class="translation">“For me it’s just WhatsApp. I just don’t have to remember the follow-ups any more.”</p>
+        <figcaption>Property consultant, Better Days Realty</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section class="section pricing" id="pricing" aria-labelledby="pricing-title">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>Pricing</p>
+    <h2 class="display h2" id="pricing-title" data-reveal>Simple plans. Free to start.</h2>
+
+    <div class="pilot" data-reveal>
+      <div class="pilot-copy">
+        <p class="pilot-tag"><span class="live-dot" aria-hidden="true"></span>Founding Broker Pilot · 10 brokerages</p>
+        <h3 class="display">Free for 60 days. Then ₹6,999 a month, locked for 2 years.</h3>
+        <p>The Team plan at 42% off for the brokerages that start with us. Free setup and training in your office, and a direct WhatsApp line to the founders.</p>
+      </div>
+      <a class="btn btn-primary btn-lg" href="{{wa|Hi! I'd like one of the 10 Founding Broker Pilot spots for my brokerage.}}" target="_blank" rel="noopener" data-cta="pilot"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg><span>Claim a pilot spot</span></a>
+    </div>
+
+    <div class="billing" role="group" aria-label="Billing period" data-billing>
+      <button type="button" class="is-on" aria-pressed="true" data-period="m">Monthly</button>
+      <button type="button" aria-pressed="false" data-period="y">Yearly <span>2 months free</span></button>
+    </div>
+
+    <div class="plans">
+      <article class="plan" data-reveal>
+        <h3>Starter</h3>
+        <p class="plan-for">Up to 5 people</p>
+        <p class="price"><span data-m="₹4,999" data-y="₹4,166">₹4,999</span><small>/month + GST</small></p>
+        <p class="plan-note" data-m="About ₹33 per person per day" data-y="₹49,990 billed yearly · about ₹28 per person per day">About ₹33 per person per day</p>
+        <a class="btn btn-ghost" href="{{wa|Hi! I'm interested in the Bayana Starter plan for my brokerage.}}" target="_blank" rel="noopener" data-cta="plan-starter"><span>Choose Starter</span></a>
+        <ul class="ticks sm">
+          <li>Shared WhatsApp inbox on your business number</li>
+          <li>Automatic reply to every new lead</li>
+          <li>Leads, pipeline, follow-ups, templates</li>
+          <li>Listings, matching, one-tap sharing</li>
+          <li>AI reply drafts in Hindi and English</li>
+          <li>Masked numbers for agents</li>
+        </ul>
+      </article>
+      <article class="plan hot" data-reveal>
+        <span class="plan-flag">Most brokerages</span>
+        <h3>Team</h3>
+        <p class="plan-for">Up to 15 people</p>
+        <p class="price"><span data-m="₹11,999" data-y="₹9,999">₹11,999</span><small>/month + GST</small></p>
+        <p class="plan-note" data-m="About ₹27 per person per day" data-y="₹1,19,990 billed yearly · about ₹22 per person per day">About ₹27 per person per day</p>
+        <a class="btn btn-primary" href="{{wa|Hi! I'm interested in the Bayana Team plan for my brokerage.}}" target="_blank" rel="noopener" data-cta="plan-team"><span>Choose Team</span></a>
+        <ul class="ticks sm">
+          <li><b>Everything in Starter, plus:</b></li>
+          <li>Portal and ad leads, auto-assigned</li>
+          <li>15-minute reply alerts and escalations</li>
+          <li>Location-verified site visits</li>
+          <li>Attendance, leave and lead cover</li>
+          <li>Deals, offers and commission split</li>
+          <li>Leaderboard and owner insights</li>
+          <li>AI call summaries, 25 hours a month</li>
+        </ul>
+      </article>
+      <article class="plan" data-reveal>
+        <h3>Business</h3>
+        <p class="plan-for">Up to 30 people</p>
+        <p class="price"><span data-m="₹21,999" data-y="₹18,333">₹21,999</span><small>/month + GST</small></p>
+        <p class="plan-note" data-m="About ₹24 per person per day" data-y="₹2,19,990 billed yearly · about ₹20 per person per day">About ₹24 per person per day</p>
+        <a class="btn btn-ghost" href="{{wa|Hi! I'm interested in the Bayana Business plan for my brokerage.}}" target="_blank" rel="noopener" data-cta="plan-business"><span>Choose Business</span></a>
+        <ul class="ticks sm">
+          <li><b>Everything in Team, plus:</b></li>
+          <li>Separate telecaller (pre-sales) team</li>
+          <li>Several offices and branches</li>
+          <li>Owner audit log and export control</li>
+          <li>AI call summaries, 60 hours a month</li>
+          <li>Named account manager, quarterly training</li>
+        </ul>
+      </article>
+    </div>
+    <ul class="price-notes">
+      <li><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp messages at Meta’s own rate. <b>No markup.</b></span></li>
+      <li><svg class="i" aria-hidden="true"><use href="#i-users"/></svg><span>More people? ₹599 per person per month.</span></li>
+      <li><svg class="i" aria-hidden="true"><use href="#i-check"/></svg><span>Every plan: free setup, Excel import, cancel any time.</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq" id="faq" aria-labelledby="faq-title">
+  <div class="wrap faq-grid">
+    <div>
+      <p class="eyebrow" data-reveal>Questions</p>
+      <h2 class="display h2" id="faq-title" data-reveal>Things brokers ask us.</h2>
+      <p class="faq-side" data-reveal>Something else? <a href="{{wa|Hi! I have a question about Bayana.}}" target="_blank" rel="noopener" data-cta="faq">Ask us on WhatsApp</a>. A person replies, usually within the hour.</p>
+    </div>
+    <div class="faq-list">
+      <details data-reveal>
+        <summary>Is my data safe? Who owns it?</summary>
+        <p>Your firm owns every lead, chat and number in Bayana. Agents see only their own leads and masked phone numbers, exports are owner-only and every export is logged. You can export everything to Excel whenever you want.</p>
+      </details>
+      <details data-reveal>
+        <summary>My team isn’t very techy. Will they actually use it?</summary>
+        <p>If they can use WhatsApp, they can use Bayana: chats, quick replies and templates work the way they expect. We set it up in your office, import your Excel sheets and train the team in one sitting, in Hindi or English.</p>
+      </details>
+      <details data-reveal>
+        <summary>Do I need a new WhatsApp number?</summary>
+        <p>We set up your firm’s official WhatsApp Business number with you, either a new number or your current business one, including Meta’s verification. Agents reply from Bayana, so buyers always see your firm’s name, not an agent’s personal number.</p>
+      </details>
+      <details data-reveal>
+        <summary>Do you track my agents all day?</summary>
+        <p>No. Bayana reads location only at the moment an agent taps check-in or check-out, to confirm they’re at the office or the property (within 200 m by default). There’s no live map and no route history.</p>
+      </details>
+      <details data-reveal>
+        <summary>Which lead sources does it work with?</summary>
+        <p>99acres, MagicBricks, Housing.com, Facebook and Instagram ads, your WhatsApp number, your website, walk-ins and referrals. Each lead shows where it came from, and you can see what each source really costs you per deal.</p>
+      </details>
+      <details data-reveal>
+        <summary>What does it really cost?</summary>
+        <p>The plan price plus 18% GST, which most brokerages can claim back. WhatsApp’s own message charges are passed on at Meta’s rate with no markup, usually ₹2,000–3,000 a month for a 15-person team. Masked calling is an optional add-on at cost.</p>
+      </details>
+      <details data-reveal>
+        <summary>What happens in the founding pilot?</summary>
+        <p>We’re onboarding the first 10 brokerages in Gurugram. You get 60 days free, setup and training in your office, and a direct line to the founders to shape what we build next. After that, the Team plan is ₹6,999 a month, locked for two years.</p>
+      </details>
+      <details data-reveal>
+        <summary>Can I leave if it doesn’t work for us?</summary>
+        <p>Yes. Plans are monthly with no contract. Export your leads, chats and notes to Excel and go.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final" aria-labelledby="final-title">
+  <svg class="final-skyline" viewBox="0 0 1440 260" preserveAspectRatio="xMidYMax slice" aria-hidden="true" data-draw><use href="#skyline"/></svg>
+  <div class="wrap final-inner">
+    <h2 class="display" id="final-title" data-reveal>Your next bayana is sitting in a WhatsApp chat right now.</h2>
+    <p data-reveal>Message us and we’ll show you Bayana working on your own leads, at your office, in 20 minutes.</p>
+    <div class="cta-row center" data-reveal>
+      <a class="btn btn-primary btn-lg" href="{{wa|Hi! I'd like a free demo of Bayana at my office.}}" target="_blank" rel="noopener" data-cta="final"><svg class="i" aria-hidden="true"><use href="#i-wa"/></svg><span>WhatsApp {{phone}}</span></a>
+      <a class="btn btn-ghost-dark btn-lg" href="{{tel}}" data-cta="call"><svg class="i" aria-hidden="true"><use href="#i-phone"/></svg><span>Call us</span></a>
+    </div>
+    <!--demo--><p class="final-demo" data-reveal>Rather click around first? <a href="{{demo}}" target="_blank" rel="noopener" data-cta="final-demo">Try the live demo</a></p><!--/demo-->
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <a class="logo on-dark" href="#top" aria-label="Bayana home"><svg class="logo-icon" viewBox="0 0 64 64" aria-hidden="true"><use href="#i-logo"/></svg><span class="logo-word">bayana</span></a>
+    <p>The WhatsApp CRM for real-estate brokerages in India.</p>
+    <nav aria-label="Footer"><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><!--demo--><a href="{{demo}}" target="_blank" rel="noopener">Live demo</a><!--/demo--><a href="{{wa|Hi Bayana!}}" target="_blank" rel="noopener">WhatsApp</a></nav>
+    <p class="copy">© 2026 Bayana. WhatsApp is a trademark of Meta Platforms, Inc.; Bayana is not affiliated with Meta.</p>
+  </div>
+</footer>
+
+<a class="dock" href="{{wa|Hi! I'd like a free demo of Bayana for my brokerage.}}" target="_blank" rel="noopener" data-dock data-cta="dock" aria-label="Get a free demo on WhatsApp">
+  <svg class="i" aria-hidden="true"><use href="#i-wa"/></svg><span>Free demo on WhatsApp</span>
+</a>
+
+{{sprite}}
+<script>{{js}}</script>
+</body>
+</html>
