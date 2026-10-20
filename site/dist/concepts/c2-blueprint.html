@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Concept 2 · Blueprint · Bayana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#141b34;--bp:#16224a;--line:rgba(255,248,236,.09);--line2:rgba(255,248,236,.18);--marigold:#f5a524;--cream:#fff8ec;--muted:#b9c0d6;--paper:#fbf6ea}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bp);color:var(--cream);font:400 16px/1.6 Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+.display{font-family:Fraunces,Georgia,serif;font-weight:650;letter-spacing:-.025em;line-height:1.02}
+.label{position:fixed;left:12px;bottom:12px;z-index:9;padding:6px 10px;border-radius:8px;background:#000;color:#fff;font:700 12px/1 Manrope}
+.sheet{position:relative;background-color:var(--bp);background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px),linear-gradient(var(--line2) 1px,transparent 1px),linear-gradient(90deg,var(--line2) 1px,transparent 1px);background-size:24px 24px,24px 24px,120px 120px,120px 120px}
+nav{display:flex;align-items:center;gap:28px;height:72px}
+.logo{display:flex;align-items:center;gap:10px;font-family:Fraunces;font-weight:650;font-size:26px;letter-spacing:-.03em}
+.logo i{width:36px;height:36px;border-radius:10px;background:var(--marigold);display:grid;place-items:center}
+nav .links{margin-left:auto;display:flex;gap:26px;font-weight:700;font-size:15px;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:10px;height:52px;padding:0 22px;border-radius:4px;font-weight:800;font-size:16px;border:0}
+.btn.primary{background:var(--marigold);color:var(--navy)}
+.btn.ghost{color:var(--cream);box-shadow:inset 0 0 0 1.5px rgba(255,248,236,.6)}
+.btn.sm{height:42px;font-size:15px}
+.hero{padding:40px 0 110px}
+.grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:48px;align-items:center}
+.tag{font:800 12.5px/1 Manrope;letter-spacing:.16em;text-transform:uppercase;color:var(--marigold)}
+h1{font-size:84px;margin:20px 0 22px}
+h1 em{font-style:italic;font-weight:500;color:var(--marigold)}
+.sub{font-size:18px;color:var(--muted);max-width:50ch}
+.hing{margin-top:14px;font-weight:800;font-size:18px}
+.ctas{display:flex;gap:12px;margin-top:28px}
+/* drawing */
+.draw{position:relative;padding:40px 30px 70px 40px}
+.shot{position:relative;border:1.5px solid rgba(255,248,236,.55);background:#fff;box-shadow:12px 12px 0 rgba(245,165,36,.18)}
+.shot img{display:block;width:100%}
+.dim{position:absolute;color:var(--marigold);font:800 12px/1 Manrope;letter-spacing:.06em;white-space:nowrap}
+.dim .t{position:absolute;background:var(--bp);padding:3px 8px;border:1px solid var(--marigold);border-radius:3px}
+.h-dim{height:14px;border-left:1.5px solid var(--marigold);border-right:1.5px solid var(--marigold)}
+.h-dim::before{content:'';position:absolute;left:0;right:0;top:7px;border-top:1.5px solid var(--marigold)}
+.d1{left:40px;right:30px;top:12px}.d1 .t{left:50%;top:-4px;transform:translateX(-50%)}
+.callout{position:absolute;display:flex;align-items:center;gap:0}
+.callout .lead{width:90px;border-top:1.5px dashed var(--marigold)}
+.callout .dot{width:9px;height:9px;border-radius:50%;background:var(--marigold);box-shadow:0 0 0 4px rgba(245,165,36,.25)}
+.callout .t{position:static;margin-left:8px;padding:6px 10px;background:var(--cream);color:var(--navy);border-radius:3px;font:800 12px/1.3 Manrope}
+.callout .t small{display:block;font-weight:600;color:#555d72;font-size:11px}
+.c1{left:150px;top:118px}.c2{left:420px;top:350px}.c3{right:-6px;top:230px;flex-direction:row-reverse}.c3 .t{margin:0 8px 0 0}
+.titleblock{position:absolute;right:30px;bottom:6px;display:grid;grid-template-columns:auto auto auto;border:1.5px solid rgba(255,248,236,.55);font:700 10.5px/1.2 Manrope;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.titleblock span{padding:7px 10px;border-right:1px solid rgba(255,248,236,.35)}.titleblock span:last-child{border-right:0}
+.titleblock b{color:var(--cream)}
+/* sample section on drafting paper */
+.paper{background:var(--paper);color:var(--navy);background-image:linear-gradient(rgba(20,27,52,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(20,27,52,.05) 1px,transparent 1px);background-size:24px 24px;padding:100px 0}
+.paper .tag{color:#8a5300}
+.paper h2{font-size:56px;margin:16px 0 40px;max-width:15ch}
+.elev{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:end}
+.building{border-left:2px solid var(--navy);border-right:2px solid var(--navy);border-top:2px solid var(--navy)}
+.floor{display:grid;grid-template-columns:70px 1fr;border-bottom:2px solid var(--navy);min-height:96px}
+.floor .lvl{display:grid;place-items:center;border-right:2px solid var(--navy);font-family:Fraunces;font-size:28px;font-weight:700}
+.floor div{padding:16px 18px}.floor h3{font-size:19px}.floor p{font-size:14px;color:#555d72}
+.floor.built .lvl{background:var(--marigold)}
+.ground{height:14px;background:repeating-linear-gradient(45deg,var(--navy) 0 2px,transparent 2px 9px)}
+.stats{display:grid;gap:34px}
+.stat .bar{position:relative;height:16px;border-left:2px solid var(--navy);border-right:2px solid var(--navy)}
+.stat .bar::before{content:'';position:absolute;left:0;right:0;top:7px;border-top:2px solid var(--navy)}
+.stat .num{font-family:Fraunces;font-size:44px;font-weight:700;letter-spacing:-.03em;line-height:1}
+.stat small{display:block;color:#555d72;font-weight:600;margin-top:6px}
+.motion{margin-top:56px;padding:22px 24px;border-radius:4px;background:var(--navy);color:var(--cream);font-size:14.5px;line-height:1.7}
+.motion b{color:var(--marigold)}
+@media (max-width:760px){
+ .wrap{padding:0 18px} nav .links{display:none} nav .btn{margin-left:auto}
+ .grid{grid-template-columns:1fr} h1{font-size:46px} .ctas{flex-direction:column}
+ .draw{padding:34px 0 64px} .c1{left:30px;top:60px}.c2{left:60px;top:170px}.c3{display:none}.callout .lead{width:40px}
+ .titleblock{right:0;font-size:9px}
+ .paper h2{font-size:36px} .elev{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<span class="label">Concept 2 · Blueprint (plan &amp; section)</span>
+<div class="sheet">
+<div class="wrap">
+  <nav><span class="logo"><i><svg width="26" height="26" viewBox="0 0 64 64"><g transform="translate(-1.5 2.5)" fill="none" stroke="#141B34" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17.6 36.6 A11.5 11.5 0 1 1 22.4 40.7 L13.5 43.2 Z"/><path d="M36.5 29.5 H53.5 M46.5 29.5 V36.5 M52 29.5 V34.5"/></g></svg></i>bayana</span>
+  <span class="links"><span>How it works</span><span>Features</span><span>Pricing</span><span>FAQ</span></span><a class="btn primary sm">WhatsApp us</a></nav>
+</div>
+<section class="hero">
+  <div class="wrap grid">
+    <div>
+      <p class="tag">Sheet 01 · Founding pilot, Gurugram</p>
+      <h1 class="display">From first WhatsApp to <em>bayana</em>.</h1>
+      <p class="sub">Bayana is the WhatsApp CRM for real-estate brokerages. Every portal lead gets a reply in seconds, you see every agent’s day on your phone, and every client stays with your firm.</p>
+      <p class="hing">Lead aapki. Data aapka. Bayana bhi aapka.</p>
+      <div class="ctas"><a class="btn primary">Get a free demo on WhatsApp</a><a class="btn ghost">Try the live demo</a></div>
+    </div>
+    <div class="draw">
+      <div class="dim h-dim d1"><span class="t">FIRST REPLY · 4 SEC</span></div>
+      <div class="shot"><img src="../media/d-today-1000.webp" alt=""></div>
+      <div class="callout c1"><span class="dot"></span><span class="lead"></span><span class="t">Waiting for a reply<small>flagged after 15 min</small></span></div>
+      <div class="callout c2"><span class="dot"></span><span class="lead"></span><span class="t">Shared ×6<small>portal sold it to 6 brokers</small></span></div>
+      <div class="callout c3"><span class="dot"></span><span class="lead"></span><span class="t">₹27.4 Cr<small>active pipeline</small></span></div>
+      <div class="titleblock"><span>Drawn by <b>Bayana</b></span><span>Scale <b>1 : 1</b></span><span>Sheet <b>01 / 08</b></span></div>
+    </div>
+  </div>
+</section>
+</div>
+<section class="paper">
+  <div class="wrap">
+    <p class="tag">Sheet 04 · Section A–A · How it works</p>
+    <h2 class="display">Built floor by floor, from enquiry to bayana.</h2>
+    <div class="elev">
+      <div>
+        <div class="building">
+          <div class="floor"><span class="lvl">4</span><div><h3>Visit, offer, bayana</h3><p>Verified visits, offers, token, commission split.</p></div></div>
+          <div class="floor"><span class="lvl">3</span><div><h3>The right agent takes over</h3><p>By area or source; 15-minute alerts.</p></div></div>
+          <div class="floor built"><span class="lvl">2</span><div><h3>Bayana replies in seconds</h3><p>Automatic reply and three questions.</p></div></div>
+          <div class="floor built"><span class="lvl">1</span><div><h3>A lead comes in</h3><p>Portals, ads, walk-ins, one inbox.</p></div></div>
+        </div>
+        <div class="ground"></div>
+      </div>
+      <div class="stats">
+        <div class="stat"><div class="bar" style="width:22%"></div><p class="num">4 sec</p><small>first reply to a portal lead</small></div>
+        <div class="stat"><div class="bar" style="width:58%"></div><p class="num">200 m</p><small>check-in radius at the site</small></div>
+        <div class="stat"><div class="bar" style="width:100%"></div><p class="num">15 min</p><small>before a waiting lead is escalated</small></div>
+      </div>
+    </div>
+    <div class="motion"><b>Motion in this concept:</b> construction lines and dimension arrows extend across the screenshot as it enters (scaleX on hairlines, no bounce) · callouts pin to the product like an architect’s annotations · “How it works” is a building section: floors fill with marigold as you scroll past them, from the ground up · every number is measured with a dimension line · sections are drawing sheets with a title block (“Sheet 04 / 08”).</div>
+  </div>
+</section>
+</body>
+</html>

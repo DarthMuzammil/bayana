@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Concept 1 · Bahi-khata · Bayana</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,600;0,9..144,700;1,9..144,500;1,9..144,600&family=Manrope:wght@400;500;600;700;800&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#141b34;--ink:#1c2547;--marigold:#f5a524;--deep:#b8720a;--ink-brown:#8a5300;--cream:#fff8ec;--paper:#fffdf7;--rule:#eadcc2;--rule-2:#f1e6d1;--muted:#5a6175;--blue:#3b82c4;--red:#b3261e}
+*{box-sizing:border-box;margin:0}
+body{background:var(--cream);color:var(--navy);font:400 16px/1.6 Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1180px;margin:0 auto;padding:0 32px}
+.display{font-family:Fraunces,Georgia,serif;font-weight:650;letter-spacing:-.025em;line-height:1.02}
+.label{position:fixed;left:12px;bottom:12px;z-index:9;padding:6px 10px;border-radius:8px;background:#000;color:#fff;font:700 12px/1 Manrope}
+nav{display:flex;align-items:center;gap:28px;height:72px}
+.logo{display:flex;align-items:center;gap:10px;font-family:Fraunces;font-weight:650;font-size:26px;letter-spacing:-.03em}
+.logo i{width:36px;height:36px;border-radius:10px;background:var(--navy);display:grid;place-items:center}
+nav .links{margin-left:auto;display:flex;gap:26px;font-weight:700;font-size:15px;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:10px;height:52px;padding:0 22px;border-radius:12px;font-weight:800;font-size:16px;text-decoration:none;border:0}
+.btn.primary{background:var(--marigold);color:var(--navy);box-shadow:0 1px 0 rgba(255,255,255,.5) inset,0 3px 0 #c98410}
+.btn.ghost{color:var(--navy);box-shadow:inset 0 0 0 1.5px var(--navy)}
+.btn.sm{height:42px;font-size:15px}
+/* Hero */
+.hero{position:relative;padding:36px 0 90px;overflow:hidden}
+.hero::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(to bottom,transparent 0 35px,var(--rule-2) 35px 36px);opacity:.7;mask:linear-gradient(to bottom,#000 60%,transparent)}
+.grid{position:relative;display:grid;grid-template-columns:1fr 560px;gap:56px;align-items:center}
+.folio{display:flex;align-items:center;gap:12px;font-size:12.5px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-brown)}
+.folio .dev{font-family:'Tiro Devanagari Hindi',serif;font-size:17px;letter-spacing:0;text-transform:none;font-weight:400}
+.folio::after{content:'';flex:1;height:1px;background:var(--rule);max-width:120px}
+h1{font-size:88px;margin:22px 0 22px}
+h1 em{font-style:italic;font-weight:600;color:var(--deep);position:relative;white-space:nowrap}
+h1 em .seal{position:absolute;right:-86px;top:2px;width:62px;height:62px;border-radius:50%;border:2.5px solid var(--deep);display:grid;place-items:center;transform:rotate(-12deg);font:800 9px/1.1 Manrope;letter-spacing:.1em;text-align:center;color:var(--deep);font-style:normal;background:rgba(255,248,236,.9)}
+.sub{font-size:18px;color:#39415a;max-width:52ch}
+.hing{margin-top:14px;font-weight:800;font-size:18px}
+.ctas{display:flex;gap:12px;margin-top:28px}
+/* Ledger */
+.book{position:relative}
+.phone{position:absolute;right:-30px;top:-34px;width:210px;padding:7px;border-radius:32px;background:#0d1226;transform:rotate(5deg);box-shadow:0 30px 50px -24px rgba(20,27,52,.5)}
+.phone img{display:block;width:100%;border-radius:26px}
+.ledger{position:relative;z-index:2;margin-right:120px;background:var(--paper);border-radius:6px 18px 18px 6px;box-shadow:0 1px 0 var(--rule),0 30px 60px -30px rgba(20,27,52,.45),-10px 0 0 -4px #9e2a1f,-14px 0 0 -4px #7d1f17;padding:22px 24px 26px 46px}
+.ledger::before,.ledger::after{content:'';position:absolute;top:0;bottom:0;width:1.5px;background:#d9a59e}
+.ledger::before{left:30px}.ledger::after{left:34px}
+.lhead{display:flex;justify-content:space-between;align-items:baseline;padding-bottom:10px;border-bottom:2px solid var(--navy)}
+.lhead strong{font-family:Fraunces;font-size:22px;letter-spacing:-.02em}
+.lhead .dev{font-family:'Tiro Devanagari Hindi';font-size:18px;color:var(--ink-brown)}
+.lhead small{font-size:12px;font-weight:700;color:var(--muted)}
+.row{display:grid;grid-template-columns:62px 1fr auto;gap:12px;align-items:baseline;padding:11px 0;border-bottom:1px solid var(--rule);font-size:14px}
+.row time{font-weight:700;color:var(--muted);font-size:12.5px;font-variant-numeric:tabular-nums}
+.row b{font-weight:800}
+.row .amt{font-family:Fraunces;font-weight:650;font-size:16px;white-space:nowrap}
+.ticks{display:inline-flex;gap:0;margin-left:6px;color:var(--blue);font-weight:800;letter-spacing:-3px;font-size:13px}
+.row.tok .amt{font-size:24px;color:var(--navy)}
+.stamp{position:absolute;right:-24px;bottom:-30px;z-index:3;width:168px;height:104px;border-radius:50%;border:3px solid var(--red);color:var(--red);display:grid;place-items:center;text-align:center;transform:rotate(-9deg);box-shadow:inset 0 0 0 5px var(--paper),inset 0 0 0 7px var(--red);background:rgba(255,253,247,.88);mix-blend-mode:multiply}
+.stamp span{font-family:Fraunces;font-weight:700;font-size:28px;line-height:1;letter-spacing:-.01em}
+.stamp small{display:block;font-size:10px;font-weight:800;letter-spacing:.18em;margin-top:2px}
+.note{margin-top:16px;font-size:12.5px;color:var(--muted)}
+/* Sample section: receipt stubs */
+.sec{padding:100px 0;background:var(--paper);border-top:1px dashed var(--rule)}
+.sec h2{font-size:56px;max-width:16ch;margin:16px 0 44px}
+.stubs{display:grid;grid-template-columns:repeat(4,1fr);gap:0;filter:drop-shadow(0 18px 30px rgba(20,27,52,.12))}
+.stub{position:relative;padding:22px 20px 24px;background:var(--cream);border-right:2px dashed var(--rule)}
+.stub:last-child{border-right:0}
+.stub:first-child{border-radius:14px 0 0 14px}.stub:last-child{border-radius:0 14px 14px 0}
+.stub .no{font-size:12px;font-weight:800;letter-spacing:.14em;color:var(--ink-brown)}
+.stub h3{font-family:Fraunces;font-size:24px;letter-spacing:-.02em;margin:10px 0 8px;line-height:1.1}
+.stub p{font-size:14px;color:var(--muted)}
+.stub img{display:block;width:100%;height:150px;object-fit:cover;object-position:top;border-radius:10px;margin-top:16px;box-shadow:inset 0 0 0 1px var(--rule)}
+.stub .done{position:absolute;right:14px;top:14px;padding:3px 8px;border:2px solid var(--red);border-radius:6px;color:var(--red);font-size:10.5px;font-weight:800;letter-spacing:.12em;transform:rotate(-6deg)}
+.checklist{margin-top:48px;display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.ck{display:flex;gap:10px;align-items:baseline;font-weight:600;font-size:15px}
+.ck i{font-style:normal;color:var(--blue);font-weight:800;letter-spacing:-3px}
+.ck i.grey{color:#9aa1b2}
+.motion{margin-top:56px;padding:22px 24px;border-radius:14px;background:var(--navy);color:var(--cream);font-size:14.5px;line-height:1.7}
+.motion b{color:var(--marigold)}
+@media (max-width:760px){
+ .wrap{padding:0 18px}
+ nav .links{display:none} nav .btn{margin-left:auto}
+ .grid{grid-template-columns:1fr;gap:36px}
+ h1{font-size:46px} h1 em .seal{width:46px;height:46px;right:-56px;top:0;font-size:7px}
+ .ctas{flex-direction:column}
+ .ledger{margin-right:0;padding:18px 16px 22px 40px}
+ .phone{display:none}
+ .stamp{right:-6px;bottom:-34px;width:136px;height:86px} .stamp span{font-size:22px}
+ .sec h2{font-size:36px}
+ .stubs{grid-template-columns:1fr;filter:none}
+ .stub{border-right:0;border-bottom:2px dashed var(--rule);border-radius:0!important}
+ .stub:first-child{border-radius:14px 14px 0 0!important}.stub:last-child{border-radius:0 0 14px 14px!important;border-bottom:0}
+ .checklist{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<span class="label">Concept 1 · Bahi-khata (ledger &amp; stamp)</span>
+<div class="wrap">
+  <nav><span class="logo"><i><svg width="26" height="26" viewBox="0 0 64 64"><g transform="translate(-1.5 2.5)" fill="none" stroke="#F5A524" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17.6 36.6 A11.5 11.5 0 1 1 22.4 40.7 L13.5 43.2 Z"/><path d="M36.5 29.5 H53.5 M46.5 29.5 V36.5 M52 29.5 V34.5"/></g></svg></i>bayana</span>
+  <span class="links"><span>How it works</span><span>Features</span><span>Pricing</span><span>FAQ</span></span><a class="btn primary sm">WhatsApp us</a></nav>
+</div>
+<section class="hero">
+  <div class="wrap grid">
+    <div>
+      <p class="folio"><span class="dev">पृष्ठ १</span> Founding pilot · Gurugram</p>
+      <h1 class="display">From first WhatsApp to <em>bayana<span class="seal">TOKEN<br>PAID</span></em>.</h1>
+      <p class="sub">Bayana is the WhatsApp CRM for real-estate brokerages. Every portal lead gets a reply in seconds, you see every agent’s day on your phone, and every client stays with your firm.</p>
+      <p class="hing">Lead aapki. Data aapka. Bayana bhi aapka.</p>
+      <div class="ctas"><a class="btn primary">Get a free demo on WhatsApp</a><a class="btn ghost">Try the live demo</a></div>
+    </div>
+    <div class="book">
+      <div class="phone"><img src="../media/reply-poster.webp" alt=""></div>
+      <div class="ledger">
+        <div class="lhead"><strong>Day book</strong><span class="dev">रोज़नामचा</span><small>Tue, 20 Oct</small></div>
+        <div class="row"><time>10:02</time><span><b>New lead</b> · 99acres · Meera, 3 BHK</span><span class="amt">₹600</span></div>
+        <div class="row"><time>10:02</time><span><b>Replied on WhatsApp</b> in 4 sec<span class="ticks">✓✓</span></span><span class="amt">—</span></div>
+        <div class="row"><time>10:05</time><span><b>Brief filled</b> · ₹2.5–2.8 Cr · by March</span><span class="amt">—</span></div>
+        <div class="row"><time>10:06</time><span><b>Assigned</b> to Priya · Golf Course Ext.</span><span class="amt">—</span></div>
+        <div class="row"><time>Sat</time><span><b>Site visit verified</b> · 42 m from site</span><span class="amt">✓</span></div>
+        <div class="row tok"><time>+14 d</time><span><b>Token received</b></span><span class="amt">₹5,00,000</span></div>
+        <p class="note">Every lead, reply, visit and rupee in one book that belongs to your firm.</p>
+      </div>
+      <div class="stamp"><div><span>Bayana</span><small>RECEIVED</small></div></div>
+    </div>
+  </div>
+</section>
+<section class="sec">
+  <div class="wrap">
+    <p class="folio"><span class="dev">पृष्ठ ४</span> How it works</p>
+    <h2 class="display">From enquiry to bayana, in four receipts.</h2>
+    <div class="stubs">
+      <div class="stub"><span class="done">DONE</span><span class="no">NO. 01</span><h3>A lead comes in</h3><p>99acres, MagicBricks, Housing, ads, walk-ins. One inbox.</p><img src="../media/how-1.webp" alt=""></div>
+      <div class="stub"><span class="done">DONE</span><span class="no">NO. 02</span><h3>Reply in seconds</h3><p>Automatic WhatsApp reply and three questions.</p><img src="../media/how-2.webp" alt=""></div>
+      <div class="stub"><span class="no">NO. 03</span><h3>Right agent takes over</h3><p>Matched homes in one tap. 15-min alerts.</p><img src="../media/how-3.webp" alt=""></div>
+      <div class="stub"><span class="no">NO. 04</span><h3>Visit, offer, bayana</h3><p>Verified visits, offers, token, commission.</p><img src="../media/how-4.webp" alt=""></div>
+    </div>
+    <div class="checklist">
+      <p class="ck"><i>✓✓</i>Automatic reply in seconds</p>
+      <p class="ck"><i>✓✓</i>Clients stay with your firm</p>
+      <p class="ck"><i class="grey">✓✓</i>Verified site visits</p>
+    </div>
+    <div class="motion"><b>Motion in this concept:</b> ledger rows write themselves in left-to-right like ink (clip-path wipe, no bounce) · each how-it-works receipt gets a rubber stamp that lands with a short, heavy settle · every feature checklist’s ticks turn grey → blue as you read down, like WhatsApp read receipts · sections are page folios of the book (पृष्ठ १, २…) separated by perforated edges · numbers in the calculator roll like a counting machine.</div>
+  </div>
+</section>
+</body>
+</html>
