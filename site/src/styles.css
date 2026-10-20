@@ -159,7 +159,6 @@ ul, ol { padding: 0; list-style: none; }
 .bubble i { display: grid; place-items: center; font-style: normal; font-weight: 800; color: var(--muted); font-size: 10px; }
 .detail-art { width: min(100% - 36px, 250px); height: auto; aspect-ratio: 240 / 150; margin: 18px 18px 14px; }
 .detail p { padding-inline: 18px; color: var(--muted); }
-.detail .redline { margin-top: 14px; font-family: var(--display); font-style: italic; font-weight: 520; font-size: 19px; color: var(--red); }
 .detail .detail-stat { margin: 16px 18px 0; padding: 12px 0 0; border-top: 1px dashed var(--line); color: var(--ink); font-size: 14.5px; }
 .detail-stat strong { font-family: var(--display); font-size: 20px; color: var(--marigold-ink); margin-right: 4px; }
 
@@ -237,26 +236,8 @@ input[type='range']::-moz-range-thumb { width: 14px; height: 26px; border-radius
 .feature.owner .feature-media { padding-bottom: 10px; }
 
 /* ---------- Comparison (Sheet 06) ---------- */
-.compare-wrap { margin-top: 40px; background: var(--white); box-shadow: 0 0 0 1.5px var(--ink); }
-.compare { width: 100%; border-collapse: collapse; }
-.compare thead { display: none; }
-.compare tr { display: grid; gap: 8px; padding: 16px 16px 18px; border-bottom: 1px solid var(--line); }
-.compare tr:last-child { border-bottom: 0; }
-.compare tbody th { text-align: left; font-size: 16.5px; font-weight: 800; line-height: 1.3; }
-.compare td { position: relative; padding-left: 28px; font-size: 15px; line-height: 1.45; }
-.compare td::before { content: ''; position: absolute; left: 0; top: 1px; width: 18px; height: 18px; background: center / 14px no-repeat; }
-.compare td:not(.is-new) { color: var(--muted); }
-.compare td:not(.is-new)::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23b3261e' stroke-width='3' stroke-linecap='round' d='M6 6l12 12M18 6L6 18'/%3E%3C/svg%3E"); }
-.compare td.is-new { font-weight: 700; }
-.compare td.is-new::before { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='%23a86206' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round' d='M5 12.5l4.5 4.5L19 7.5'/%3E%3C/svg%3E"); }
 
 /* ---------- Specification (Sheet 07) ---------- */
-.spec { margin-top: 40px; border-top: 1.5px solid var(--ink); }
-.spec li { display: grid; grid-template-columns: 46px 24px 1fr; gap: 14px; align-items: start; padding: 20px 0; border-bottom: 1px solid var(--line); }
-.spec-no { font-size: 12.5px; font-weight: 800; letter-spacing: .08em; color: var(--marigold-ink); padding-top: 3px; }
-.spec .i { width: 22px; height: 22px; margin-top: 1px; }
-.spec h3 { font-size: 18px; line-height: 1.3; margin-bottom: 4px; }
-.spec p { color: var(--muted); font-size: 15.5px; }
 
 /* ---------- Client sign-off (Sheet 08) ---------- */
 .signoff { background: var(--white); box-shadow: 0 0 0 1.5px var(--ink); }
@@ -274,10 +255,7 @@ input[type='range']::-moz-range-thumb { width: 14px; height: 26px; border-radius
 .sb-firm { order: 2; }
 .sb-status b { display: inline-flex; align-items: center; gap: 6px; font-size: 15.5px; }
 .sb-status .i { width: 18px; height: 18px; color: var(--marigold-ink); }
-.site-notes { display: grid; gap: 14px; margin-top: 16px; }
-.site-note { padding: 18px 20px; background: var(--white); box-shadow: 0 0 0 1px var(--line); border-left: 3px solid var(--marigold); }
 .sn-head { font-size: 11.5px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; color: var(--marigold-ink); margin-bottom: 8px; }
-.site-note blockquote { font-weight: 700; font-size: 17px; line-height: 1.45; }
 .translation { margin-top: 8px; color: var(--muted); font-size: 14.5px; }
 
 /* ---------- Schedule of rates (Sheet 09) ---------- */
@@ -412,22 +390,10 @@ input[type='range']::-moz-range-thumb { width: 14px; height: 26px; border-radius
   :root { --pad: 32px; }
   .cta-row .btn { flex: 0 0 auto; }
   .details { grid-template-columns: repeat(2, 1fr); }
-  .site-notes { grid-template-columns: 1fr 1fr; }
   .signoff blockquote { padding: 40px 40px 34px; }
   .signoff-block { grid-template-columns: 1.3fr 1fr 1.3fr .9fr; }
   .sb-person, .sb-firm { grid-column: auto; }
   .sb-status, .sb-firm { order: 0; }
-  .compare thead { display: table-header-group; }
-  .compare tr { display: table-row; padding: 0; }
-  .compare th, .compare td { padding: 16px 18px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
-  .compare tbody tr:last-child th, .compare tbody tr:last-child td { border-bottom: 0; }
-  .compare thead th { padding: 14px 18px; border-bottom: 1.5px solid var(--ink); font-size: 12.5px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
-  .compare thead th small { display: block; margin-top: 2px; font-size: 14px; letter-spacing: 0; text-transform: none; font-weight: 600; color: var(--muted); }
-  .compare .is-new { background: rgba(245, 165, 36, .1); }
-  .compare td { padding-left: 46px; }
-  .compare td::before { left: 18px; top: 18px; }
-  .compare tbody th { width: 30%; }
-  .spec { display: grid; grid-template-columns: 1fr 1fr; column-gap: 40px; }
   .footer-block { grid-template-columns: auto 1.4fr 1.4fr auto; }
   .fb-cell { box-shadow: inset -1px 0 0 rgba(255, 248, 236, .2); }
 }
@@ -479,8 +445,8 @@ input[type='range']::-moz-range-thumb { width: 14px; height: 26px; border-radius
 }
 
 /* Below-the-fold sheets render only when they come near the screen; in-page links turn this off first (see main.js) */
-.features, .compare-sec, .easy, .proof, .pricing, .faq { content-visibility: auto; contain-intrinsic-size: auto 1400px; }
-.cv-off .features, .cv-off .compare-sec, .cv-off .easy, .cv-off .proof, .cv-off .pricing, .cv-off .faq { content-visibility: visible; }
+.features, .proof, .pricing, .faq { content-visibility: auto; contain-intrinsic-size: auto 1400px; }
+.cv-off .features, .cv-off .proof, .cv-off .pricing, .cv-off .faq { content-visibility: visible; }
 
 /* Reduced motion: nothing moves, everything is in its final state */
 .no-motion *, .no-motion *::before, .no-motion *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
