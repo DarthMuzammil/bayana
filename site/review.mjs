@@ -29,6 +29,9 @@ for (const w of list) {
     i++
   }
   await page.waitForTimeout(800)
+  // On phones, anything wider than the screen makes the browser zoom the whole page out: catch it by the layout width.
+  const layoutW = await page.evaluate(() => innerWidth)
+  if (layoutW > w) console.log(`[${w}]   PAGE ZOOMED OUT: layout is ${layoutW}px wide on a ${w}px screen`)
   await page.evaluate(() => scrollTo(0, 0))
   await page.waitForTimeout(400)
   await page.screenshot({ path: `${OUT}/${w}-full.png`, fullPage: true })

@@ -31,6 +31,27 @@ if (config.demoUrl) {
   html = html.replace(/<!--demo-->[\s\S]*?<!--\/demo-->/g, '').replace(/<!--\/?nodemo-->/g, '')
 }
 
+// "How it works" towers: stage N has N floors (the newest in marigold), a crane until the handover, then a roof and flag.
+const tower = (n) => {
+  const G = 150, fh = 26, x = 80, w = 80
+  const top = G - fh * n
+  const parts = [`<path class="ground" d="M-40 ${G}H280"/>`]
+  for (let hx = -36; hx < 280; hx += 9) parts.push(`<path class="hatch" d="M${hx} ${G + 1}l-6 7"/>`)
+  for (let k = 1; k <= n; k++) {
+    const y = G - fh * k
+    const wins = [10, 34, 58].map((dx) => `<rect class="win" x="${x + dx}" y="${y + 8}" width="12" height="10"/>`).join('')
+    parts.push(`<g class="fl${k === n ? ' new' : ''}" style="--k:${k - 1}"><rect class="body" x="${x}" y="${y}" width="${w}" height="${fh}"/>${wins}</g>`)
+  }
+  if (n < 4) {
+    const t = top - 38
+    parts.push(`<path class="crane" d="M196 ${G}V${t}M126 ${t}H222M190 ${t}l6 -12l6 12M140 ${t}v18m-4 0h8v6h-8zM210 ${t}v7h12v-7"/>`)
+  } else {
+    parts.push(`<path class="roof" d="M74 ${top}H166"/><path class="roof" d="M150 ${top}V${top - 30}"/><path class="flag" d="M150 ${top - 30}L172 ${top - 24}L150 ${top - 18}Z"/>`)
+  }
+  return `<svg class="tower" viewBox="0 0 240 160" preserveAspectRatio="xMidYMax meet" aria-hidden="true">${parts.join('')}</svg>`
+}
+html = html.replace(/\{\{tower (\d)\}\}/g, (_, n) => tower(+n))
+
 // Structured data
 const jsonld = {
   '@context': 'https://schema.org',
@@ -55,16 +76,19 @@ const chars = [...new Set(visible + attrs + safety)].filter((c) => c.codePointAt
 const fontsDir = path.join(here, 'fonts-src')
 const faces = []
 const preloads = []
-for (const [family, file, axes, weight] of [
-  ['Fraunces', 'Fraunces.ttf', { opsz: 72, wght: 650, SOFT: 0, WONK: 0 }, '500 800'],
-  ['Manrope', 'Manrope.ttf', { wght: { min: 400, max: 800 } }, '400 800'],
+// Italic is only used for a few emphasised words, so it gets a smaller character set.
+const italicChars = [...new Set([...html.matchAll(/<em>([^<]*)<\/em>|class="(?:redline|op)"[^>]*>([^<]*)</g)].map((m) => (m[1] ?? '') + (m[2] ?? '')).join('') + ' .,’“”×=–abcdefghijklmnopqrstuvwxyz')].join('')
+for (const [family, file, axes, weight, style, text] of [
+  ['Fraunces', 'Fraunces.ttf', { opsz: 72, wght: 650, SOFT: 0, WONK: 0 }, '500 800', 'normal', chars],
+  ['Fraunces', 'Fraunces-Italic.ttf', { opsz: 72, wght: 520, SOFT: 0, WONK: 0 }, '400 700', 'italic', italicChars],
+  ['Manrope', 'Manrope.ttf', { wght: { min: 400, max: 800 } }, '400 800', 'normal', chars],
 ]) {
-  const out = await subsetFont(fs.readFileSync(path.join(fontsDir, file)), chars, { targetFormat: 'woff2', variationAxes: axes })
-  const name = `${family.toLowerCase()}-${crypto.createHash('md5').update(out).digest('hex').slice(0, 8)}.woff2`
+  const out = await subsetFont(fs.readFileSync(path.join(fontsDir, file)), text, { targetFormat: 'woff2', variationAxes: axes })
+  const name = `${family.toLowerCase()}${style === 'italic' ? '-italic' : ''}-${crypto.createHash('md5').update(out).digest('hex').slice(0, 8)}.woff2`
   fs.writeFileSync(path.join(dist, 'fonts', name), out)
-  faces.push(`@font-face{font-family:'${family}';src:url(fonts/${name}) format('woff2');font-weight:${weight};font-style:normal;font-display:swap}`)
+  faces.push(`@font-face{font-family:'${family}';src:url(fonts/${name}) format('woff2');font-weight:${weight};font-style:${style};font-display:swap}`)
   preloads.push(`<link rel="preload" href="fonts/${name}" as="font" type="font/woff2" crossorigin>`)
-  console.log(`font ${family}: ${(out.length / 1024).toFixed(1)} KB`)
+  console.log(`font ${family} ${style}: ${(out.length / 1024).toFixed(1)} KB`)
 }
 html = html.replace('{{fontPreloads}}', preloads.join('\n'))
 
