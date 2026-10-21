@@ -28,8 +28,9 @@ async function img(input, name, width, { avifQ = 55, webpQ = 78, pipeline } = {}
 // 1. Phone screens for "How it works"
 for (let n = 1; n <= 4; n++) await img(path.join(CAP, `snap-how-${n}.png`), `how-${n}`, 600)
 
-// 2. Owner desktop screenshot
+// 2. Owner desktop screenshot, and the owner's phone home for the hero on small screens
 for (const w of [1000, 1600]) await img(path.join(CAP, 'still-d-today.png'), `d-today-${w}`, w, { avifQ: 50 })
+await img(path.join(CAP, 'still-p-today.png'), 'p-today', 600)
 
 // 3. Product clips (encoded from the original frames, not from an already-compressed video)
 const clips = { reply: 600, share: 600, visit: 600, handover: 600, escalate: 420 }
